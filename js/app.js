@@ -1,7 +1,7 @@
 /**
  * ?Analyse
  * * Index page will be created by using verblist.js
- *     *Each row and column will be added by script
+ *     *Each row and column will be added from the verblist.js by script
  * *Learn page will be created
  *     *Table will be created
  *     *Random number function will be written
@@ -11,7 +11,10 @@
  * *Exercise page will be created
  *     *Page will be designed
  *     *Accordion verb list will be inserted when the page was loaded
- *     *Each verb on the list will have an onclick() event to change the word on the exercise part  
+ *     *Each verb on the list will have an onclick() event to change the word on the exercise part
+ *     *When "New" button is clicked, a new verb in Turkish will be shown   
+ *     *When "Show" button is clicked, three past participate forms of the written verb will be shown in the inputs
+ *     *When "Clear" button is clicked, input group will be cleared
  */
 
 const irrVerbs = document.querySelector('#verblist');
