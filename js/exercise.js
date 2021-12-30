@@ -38,5 +38,10 @@ showBtn.addEventListener('click', function () {
 
 })
 
-
+// Clear Button
+clearBtn.addEventListener('click', function () {
+    inputV1.value = '';
+    inputV2.value = '';
+    inputV3.value = '';
+})
 newVerbExercise(index);
