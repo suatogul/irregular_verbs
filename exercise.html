@@ -12,11 +12,84 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Exercises</title>
   </head>
   <body>
     <h1>Hello, world!</h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-3">
+          <div class="row">
+            <div class="row mb-3 justify-content-between">
+              <div class="col-3"><h5>Verb</h5></div>
+              <div class="col-3">
+                <button class="btn btn-primary">New</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <!-- <i class="fa fa-check-circle-o" aria-hidden="true"></i> -->
+            <div class="input-group mb-3">
+              <span class="input-group-text">V1</span>
+              <input type="text" class="form-control" aria-label="verb 1" aria-describedby="basic-addon1" />
+              <span class="input-group-text" id="v1-addon"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">V2</span>
+              <input type="text" class="form-control" aria-label="verb 2" aria-describedby="basic-addon1" />
+              <span class="input-group-text" id="v2-addon"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text">V3</span>
+              <input type="text" class="form-control" aria-label="verb 3" aria-describedby="basic-addon1" />
+              <span class="input-group-text" id="v3-addon"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-between">
+              <button class="btn btn-primary">Show</button>
+              <button class="btn btn-primary">Clear</button>
+            </div>
+          </div>
+        </div>
+        <!-- Accardion starts   ---------------------------------------------------------------------    -->
+        <div class="col-9">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  All Irregular verbs
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="row" id="accardion-verb-list">
+                    <!-- <div class="col-2 mb-3"><a href="#" onclick="">awake</a></div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accardion finishese  ----------------------             ------------------->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script
@@ -24,5 +97,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/verblist.js"></script>
+    <script src="./js/exercise.js"></script>
   </body>
 </html>

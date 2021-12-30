@@ -1,17 +1,20 @@
 /**
  * ?Analyse
- * * Index page will be created by using verblist
+ * * Index page will be created by using verblist.js
  *     *Each row and column will be added by script
- * *
+ * *Learn page will be created
+ *     *Table will be created
+ *     *Random number function will be written
+ *     *By onclick() event the funtion will be triggered 
+ *     *The same function will be called, when the page loaded. 
+ *        *Otherwise inside the table will be emmpty when the page refreshed.
+ * *Exercise page will be created
  */
 
-let irrVerbs = document.querySelector('#verblist');
-console.log(verblist);
-
-
+const irrVerbs = document.querySelector('#verblist');
 irrVerbs.innerHTML = verbList
-    .map((verb) => {
-        return `
+  .map((verb) => {
+    return `
         <tr>
         <th>${verb.verb1Name}</th>
         <td>${verb.verb2Name}</td>
@@ -22,5 +25,5 @@ irrVerbs.innerHTML = verbList
         <td>${verb.verbTurkish}</td>
       </tr>
  `;
-    })
-    .join("");
+  })
+  .join("");
