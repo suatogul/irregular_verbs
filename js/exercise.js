@@ -27,6 +27,7 @@ function newVerbExercise(indexNum) {
         `
         ${verbList[indexNum].verbTurkish}
  `;
+    //keepindex will be used to check if or not entered verb is correct
     keepIndex = indexNum;
     inputV1.value = '';
     inputV2.value = '';
